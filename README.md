@@ -55,3 +55,5 @@ No palindrome logic implemented
 Author
 
 Developer
+
+Project submitted by Pranjal Kumar Singh (GitHub: murphyillict)
