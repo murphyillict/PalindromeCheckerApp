@@ -1,59 +1,34 @@
-# PalindromeCheckerApp
+# Palindrome Checker App
 
-Overview
+## Overview
+**Palindrome Checker App** is a Java-based application designed to validate whether a given string is a palindrome. The project is structured into multiple **use cases**, each demonstrating a different approach to palindrome checking.  
 
-The Palindrome Checker App Management System is a Java-based application.
+This repository is useful for learning string manipulation, algorithmic thinking, and branch-based development in Git.
 
-This version (1.0) represents the initial setup of the system and serves as the application entry point.
+---
 
-At this stage, the program:
+## Features / Use Cases
 
-Starts execution from the main() method
+### **Use Case 1: Basic Palindrome Checker**
+- Stored in branch: `HomePage`  
+- Checks a word or string for palindrome property using **simple character comparison**.
+- Iterates over the string with **manual loops**.
 
-Displays a welcome message
+---
 
-Shows the application version
+### **Use Case 2: Reverse String with Iteration**
+- Stored in branch: `UseCase2`  
+- Checks palindrome by **reversing the string manually** with a two-pointer approach.
+- Compares the original and reversed strings to determine validity.
+- Demonstrates **string transformation before advanced data structures**.
 
-Confirms successful system initialization
+---
 
-No palindrome-checking functionality has been implemented yet.
-
-Project Structure
-PalindromeCheckerApp.java
-Requirements
-
-Java Development Kit (JDK) 8 or higher
-
-Command Line / Terminal
-
-Compilation
-
-To compile the program, run:
-
-javac PalindromeCheckerApp.java
-Execution
-
-To run the program, use:
-
-java PalindromeCheckerApp
-Expected Output
-Welcome to Palindrome Checker App Management System
-Version : 1.0
-System initialized successfully.
-Version
-
-1.0
-
-Initial release:
-
-Application entry point created
-
-Basic startup flow established
-
-No palindrome logic implemented
-
-Author
-
-Developer
-
-Project submitted by Pranjal Kumar Singh (GitHub: murphyillict)
+### **Use Case 3: Palindrome Check Using `StringBuilder.reverse()`**
+- Stored in branch: `UseCase3`  
+- Simplifies palindrome checking using Java’s built-in string reversal:
+  ```java
+  String reversed = new StringBuilder(word).reverse().toString();
+  if (word.equals(reversed)) {
+      System.out.println(word + " is a palindrome.");
+  }
