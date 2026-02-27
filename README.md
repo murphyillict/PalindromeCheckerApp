@@ -1,59 +1,25 @@
 # PalindromeCheckerApp
 
-Overview
+## Overview
+**Use Case 4** of the Palindrome Checker App focuses on checking if a given string is a palindrome using a **character array** approach.
 
-The Palindrome Checker App Management System is a Java-based application.
+Unlike previous implementations (manual loops or `StringBuilder.reverse()`), this method demonstrates **array-based string manipulation**, which is a fundamental programming technique.
 
-This version (1.0) represents the initial setup of the system and serves as the application entry point.
+It’s perfect for learning:
 
-At this stage, the program:
+- How strings can be represented as character arrays
+- Two-pointer algorithms for string validation
+- Efficient palindrome checking without extra library methods
 
-Starts execution from the main() method
+---
 
-Displays a welcome message
+## Features
 
-Shows the application version
+- Converts the input string into a **character array**
+- Uses **two-pointer comparison**: left pointer starts at the beginning, right pointer starts at the end
+- Compares characters while moving toward the center
+- Outputs whether the string is a palindrome or not
+- Handles any single-word string input
+- Lightweight and efficient
 
-Confirms successful system initialization
-
-No palindrome-checking functionality has been implemented yet.
-
-Project Structure
-PalindromeCheckerApp.java
-Requirements
-
-Java Development Kit (JDK) 8 or higher
-
-Command Line / Terminal
-
-Compilation
-
-To compile the program, run:
-
-javac PalindromeCheckerApp.java
-Execution
-
-To run the program, use:
-
-java PalindromeCheckerApp
-Expected Output
-Welcome to Palindrome Checker App Management System
-Version : 1.0
-System initialized successfully.
-Version
-
-1.0
-
-Initial release:
-
-Application entry point created
-
-Basic startup flow established
-
-No palindrome logic implemented
-
-Author
-
-Developer
-
-Project submitted by Pranjal Kumar Singh (GitHub: murphyillict)
+---
