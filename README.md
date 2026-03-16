@@ -1,28 +1,25 @@
 ## Objective
-The goal of this project is to demonstrate palindrome checking using both a stack and a queue.
-By leveraging the LIFO (Last-In-First-Out) property of stacks and the FIFO (First-In-First-Out) property of queues, we can compare characters from the front and back of a string efficiently. This dual-structure approach reinforces understanding of data structures and their practical applications.
+The objective of this project is to implement an optimized palindrome checker using a Deque (Double-Ended Queue).
+Unlike the stack + queue approach, a deque allows direct access to both ends of the sequence, making palindrome checking more efficient and elegant.
 
 ## Flow of the Project
 1. 	Input Handling
       • 	User enters a string.
       • 	The string is normalized (converted to lowercase, spaces removed).
-2. 	Data Structure Usage
-      • 	Each character is pushed into a stack.
-      • 	Each character is enqueued into a queue.
-3. 	Comparison Process
-      • 	Characters are popped from the stack (reverse order).
-      • 	Characters are dequeued from the queue (original order).
-      • 	If all characters match, the string is a palindrome.
+2. 	Deque Operations
+      • 	Each character of the string is added to the deque.
+      • 	Characters are compared by removing from the front and back simultaneously.
+3. 	Comparison Logic
+      • 	If all corresponding characters match, the string is a palindrome.
+      • 	If any mismatch occurs, the string is not a palindrome.
 4. 	Output
       • 	Display whether the string is a palindrome or not.
 
 ## Use Case
-• 	Educational Purpose: Helps students understand how stacks and queues work in tandem.
-• 	String Processing: Useful in text validation, natural language processing, and pattern recognition.
-• 	Interview Preparation: A common data structure problem asked in coding interviews.
+• 	Educational Purpose: Demonstrates how a single data structure (Deque) can replace both stack and queue.
+• 	Performance-Oriented: Optimized solution with fewer operations and cleaner logic.
+• 	Interview Preparation: A common problem in coding interviews, showcasing knowledge of advanced data structures.
 • 	Real-world Applications:
-• 	Checking palindromic DNA sequences in bioinformatics.
-• 	Validating symmetric encryption keys.
-• 	Detecting mirrored patterns in data streams.
-
---------------------
+• 	Checking palindromic sequences in computational biology.
+• 	Detecting mirrored patterns in text or data streams.
+• 	Useful in algorithms for symmetric encryption and pattern recognition.
