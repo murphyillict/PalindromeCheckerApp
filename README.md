@@ -1,7 +1,7 @@
 # PalindromeCheckerApp
 
 ## Objective
-**Use Case 4** of the Palindrome Checker App focuses on checking if a given string is a palindrome using a **stack based** approach
+**Use Case 5** of the Palindrome Checker App focuses on checking if a given string is a palindrome using a **stack based** approach
 Objective of this project is to develop a java application to check palindrome using LIFO structure of stack. 
 ## Features
 1. Start the program
