@@ -1,27 +1,25 @@
 ## Objective
-The objective of this project is to implement multiple palindrome checking algorithms using the Strategy Pattern.
-This design allows different palindrome strategies (stack + queue, deque, linked list, recursion, etc.) to be encapsulated and swapped at runtime, promoting flexibility and scalability.
+The objective of UC13 is to compare the performance of different palindrome algorithms (Stack+Queue, Deque, Linked List, Recursion, Case-insensitive, Object-Oriented Service, Strategy Pattern).
+This helps identify which approach is most efficient for different input sizes.
 
 ## Flow of the Project
 1. 	Input Handling
-      • 	User enters a string.
-      • 	The string is normalized (case-insensitive, spaces removed).
-2. 	Strategy Pattern Setup
-      • 	Define a  interface with a method .
-      • 	Implement multiple concrete strategies (e.g., , , , ).
-3. 	Context Class
-      • 	A  class holds a reference to a chosen strategy.
-      • 	The context delegates the palindrome check to the selected strategy.
-4. 	Execution
-      • 	User selects which algorithm to use.
-      • 	The context applies the chosen strategy to check if the string is a palindrome.
+      • 	Generate or accept test strings of varying lengths (short, medium, long).
+2. 	Strategy Setup
+      • 	Implement each palindrome algorithm as a separate method or strategy class.
+3. 	Performance Measurement
+      • 	Use  or  to measure execution time.
+      • 	Run each algorithm on the same input string.
+4. 	Comparison
+      • 	Print execution times for each algorithm.
+      • 	Optionally, visualize results (bar chart, table).
 5. 	Output
-      • 	Display whether the string is a palindrome or not, along with the strategy used.
+      • 	Show which algorithm is fastest for different input sizes.
 
 ## Use Case
-• 	Educational Purpose: Demonstrates advanced object-oriented design patterns in practice.
-• 	Flexibility: Easily switch between different palindrome algorithms without changing client code.
-• 	Interview Preparation: Showcases knowledge of design patterns and clean architecture.
+• 	Educational Purpose: Demonstrates algorithm efficiency and trade-offs.
+• 	Benchmarking: Helps decide which algorithm to use in real-world applications.
+• 	Interview Preparation: Shows ability to analyze performance beyond correctness.
 • 	Real-world Applications:
-• 	Systems requiring multiple algorithm implementations for testing or optimization.
-• 	Modular applications where algorithm choice depends on performance or context.
+• 	Choosing optimal algorithms for large-scale text processing.
+• 	Performance tuning in systems where palindrome checks are frequent.
